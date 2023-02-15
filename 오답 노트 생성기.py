@@ -1,6 +1,6 @@
 import gspread
 
-json_key_path = r'C:\Users\andol\Downloads\resolute-choir-355911-207bb94a8035.json'
+json_key_path = 
 
 gc = gspread.service_account(filename=json_key_path)
 doc = gc.open("오답 노트")
@@ -15,8 +15,7 @@ for i in range(n):
   right_answer = input('정답을 입력해주세요:')
   wrong_reason = input('틀린 이유를 입력해주세요:')
 
-  image_path = f"C:\\Users\\andol\\OneDrive\\바탕 화면\\PythonWorkspace\\{question_number}.jpg"
-
+  image_path = 
 
   sheet.append_row([
     question_number,your_answer,right_answer,wrong_reason,image_path])
